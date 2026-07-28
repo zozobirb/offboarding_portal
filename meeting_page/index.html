@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe - Meeting Page</title>
+  </head>
+  <body>
+
+
+    
+<div class="main-body">
+<div class="title-body">
+  <h1>Meeting Hub</h1>
+
+  <button class="btn-request">Meeting Feedback</button>
+</div>
+    
+
+<div class="form-container">
+
+<div class="form-display">
+    <button class="cancel-btn">Cancel</button>
+    <h2>1:1 Meeting Feedback</h2>
+    <form action="#" method="POST">
+        
+        
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </div>
+
+         <div class="form-group">
+            <label for="position">Your Position</label>
+            <input type="position" id="position" name="position" placeholder="Intern Position" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="date">Meeting Date</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Meeting Time</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+
+        <div class="form-group">
+            <label for="type">Mentor Name</label>
+            <select id="type" name="type">
+                <option value="web-dev">John Doe</option>
+                <option value="finance">Jane Doe</option>
+                <option value="gis">X</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="notes">Feedback Evaluation</label>
+            <textarea id="eval" name="notes" placeholder="Feedback here...."></textarea>
+        </div>
+
+        <button type="submit" id="sub-btn">Submit Feedback</button>
+    </form>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="meeting-body">
+
+    <div class="meeting-card">
+        <div class="title_track">
+            <h2 id="man-title">Mandatory Meeting</h2>
+            <div class="tracker-body"> 
+                <svg class="svg-man">
+  <circle class="man-cir"/>
+</svg>
+
+         <svg class="svg-man">
+  <circle class="man-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="man-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="man-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="man-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="man-cir"/>
+</svg>
+
+             <svg class="svg-man">
+  <circle class="man-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="man-cir" id="last-cir"/>
+</svg>
+
+
+            </div>
+        </div>
+    <aside class="log-body">
+         <h3>Log Mandatory Attendance</h3>
+        <div class="btn-container">
+            <button class="btn" id="man-log">+</button>
+            <p class="btn-text">Log a meeting attendance</p>
+        </div>
+    </aside>
+    </div>
+
+<div class="meeting-card">
+        <div class="title_track">
+            <h2 id="one-title">1:1 Meeting</h2>
+            <div class="tracker-body">
+                
+                
+                <svg class="svg-man">
+  <circle class="one-cir"/>
+</svg>
+
+         <svg class="svg-man">
+  <circle class="one-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="one-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="one-cir" id="min-cir"/>
+</svg>
+
+
+             <svg class="svg-man">
+  <circle class="one-cir" id="last-one-cir"/>
+</svg>
+
+
+            </div>
+        
+       
+        </div>
+    <aside class="log-body">
+        <h3>Modify 1:1 Meetings</h3>
+        <div class="btn-container">
+            <button class="btn" id="one-log">+</button>
+            <p class="btn-text">Log a meeting</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="reg-btn">+</button>
+            <p class="btn-text">Register for a Meeting</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="cancel-btn">-</button>
+            <p class="btn-text">Cancel a Meeting</p>
+        </div>
+    </aside>
+    </div>
+
+   
+
+
+
+</div>
+
+  
+  
+
+
+
+
+
+  
+</div>
+
+
+ <script src="script.js" defer></script>
+
+    
+  </body>
+</html>
