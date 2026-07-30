@@ -1,55 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-        <link rel="stylesheet" href="./stylesheets.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoe Project Track</title>
-</head>
-<body>
+import { useState } from 'react'
+import './ProjectPage.css'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 
 
-    <div class="main-body">
+
+function Project(){
+
+    return(
+    <div className="main-body">
         <h1 id="page-title">Project Hub</h1>
 
 
-        <aside class="project-track">
-                <form class="form-container">
+        <aside className="project-track">
+                <form class="form-container"/>
                     <h2>Project Track</h2>
 
 
-                      <div class="project-check">
+                      <div className="project-check">
             <h3>Project One</h3>
-                <div class="check-container" id="check-one">
-                   <div class="check+label">
-                    <input type="checkbox" class="check ck-IP"></input>
+                <div className="check-container" id="check-one">
+                   <div className="check+label">
+                    <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check+label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    
                     </div>
 
                     
-                    <div class="project-check">
+                    <div className="project-check">
             <h3>Project Two</h3>
-                <div class="check-container" id="check-two">
-                     <div class="check+label">
+                <div className="check-container" id="check-two">
+                     <div className="check+label">
                     <input type="checkbox" class="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -57,55 +55,55 @@
                     </div>
 
 
-                    <div class="project-check">
+                    <div className="project-check">
             <h3>Project Three</h3>
-                <div class="check-container" id="check-three">
-                    <div class="check+label">
+                <div className="check-container" id="check-three">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check+label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    
                     </div>
 
-                    <div class="project-check">
+                    <div className="project-check">
             <h3>Project Four</h3>
-                <div class="check-container" id="check-four">
-                     <div class="check+label">
-                    <input type="checkbox" class="check ck-IP"></input>
+                <div className="check-container" id="check-four">
+                     <div className="check+label">
+                    <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check+label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check+label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    
                     </div>
 
 
-                    <div class="project-check">
+                    <div className="project-check">
             <h3>Project Five</h3>
-                <div class="check-container" id="check-five">
-                     <div class="check+label">
-                    <input type="checkbox" class="check ck-IP"></input>
+                <div className="check-container" id="check-five">
+                     <div className="check+label">
+                    <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -113,18 +111,18 @@
                     </div>
 
 
-                   <div class="project-check">
+                   <div className="project-check">
             <h3>Project Six</h3>
-                <div class="check-container" id="check-six">
-                     <div class="check+label">
-                    <input type="checkbox" class="check ck-IP"></input>
+                <div className="check-container" id="check-six">
+                     <div className="check+label">
+                    <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check+label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -132,18 +130,18 @@
                     </div>
 
 
-                    <div class="project-check">
+                    <div className="project-check">
             <h3>Project Seven</h3>
-                <div class="check-container" id="check-seven">
-                     <div class="check+label">
+                <div className="check-container" id="check-seven">
+                     <div className="check+label">
                     <input type="checkbox" class="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check+label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -154,15 +152,15 @@
                     <div class="project-check">
             <h3>Project Eight</h3>
                 <div class="check-container" id="check-eight">
-                     <div class="check+label">
-                    <input type="checkbox" class="check ck-IP"></input>
+                     <div className="check+label">
+                    <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div class="check+label">
+                    <div className="check+label">
                     <input type="checkbox" class="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -172,10 +170,10 @@
 
         </aside>
 
-        <div class="project-deat-body">
+        <div className="project-deat-body">
 
 
-            <div class="drop-down-proj">
+            <div className="drop-down-proj">
                 <select id="type" name="type">
                 <option value="wk-one">Week 1</option>
                 <option value="wk-two">Week 2</option>
@@ -193,24 +191,23 @@
 
             <h3>Topic:</h3>
 
-            <p class="topic-p">
+            <p className="topic-p">
                Attention to Detail & Problem Solving, Branding
             </p>
 
             <h4>Deliverables</h4>
 
-            <p class="deliverable-p">
+            <p className="deliverable-p">
                 TLT Review and connect with others.
 
-All interns have the same project this week. You will be learning about TLT-
-Tomorrow’s Leaders Today. Information found during this review will be
+All interns have the same project this week. You will be learning about the organization. Information found during this review will be
 
 needed in future projects.
 TLT Scavenger Hunt. Locate and complete the scavenger hunt document in
 your shared folder. Prepare a detailed response to each item listed, on where
 and what you find along the way. Yes, use the Scavenger Hunt word
 document found in your personal share drive folder. Put the finished
-scavenger hunt in the “completed project” folder of your shared drive, no
+scavenger hunt in the &atscompleted project&ats folder of your shared drive, no
 later than Sunday noon.
             </p>
 
@@ -219,6 +216,10 @@ later than Sunday noon.
 
 
     </div>
+);
 
-</body>
-</html>
+
+
+}
+
+export default Project;

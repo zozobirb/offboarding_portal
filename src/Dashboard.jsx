@@ -1,50 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoe - Offboarding Dashboard</title>
-  </head>
-  <body>
+import { useState } from 'react'
+import './Dashboard.css'
+import { Link, useNavigate } from 'react-router-dom'
 
 
+
+
+
+function Dashboard(){
+  return(
     
-<div class="main-body">
-<div class="title-body">
+<div className="main-body">
+<div className="title-body">
   <h1>Welcome to the Offbording Portal</h1>
 </div>
     
-<div class="dashboard">
-<div class="dash-children">
+<div className="dashboard">
+<div className="dash-children">
+
 <p>Meeting Hub</p>
+  
 </div>
 
-  <div class="dash-children">
-<p>Project Hub</p>
+  <div className="dash-children">
+<Link to="/projectHub">Project Hub</Link  >
 </div>
 
-  <div class="dash-children">
+  <div className="dash-children">
 <p>Submissions</p>
 </div>
 
-  <div class="dash-children">
+  <div className="dash-children">
 <p>Intern Hours</p>
 </div>
 
-  <div class="dash-children">
+  <div className="dash-children">
 <p>Software Requests</p>
 </div>
 
 </div>
 
 
-  <div class="message-body"><div class="intro"><h2>Overview:</h2>
+  <div className="message-body"><div className="intro"><h2>Overview:</h2>
 <p>Welcome to the Offboarding Portal. Here the portal will serve as a way to track your internship experience here at TLT. Ensurring you are on track as a intern</p>
 
 <h3>What to find:</h3>
 </div>
-    <div class="tab-article meetings">
+    <div className="tab-article meetings">
     <h4>Meetings</h4>
     <ul>
       <li>Track meetings</li>
@@ -56,7 +57,7 @@
     </div>
 
 
-   <div class="tab-article projects">
+   <div className="tab-article projects">
     <h4>Projects</h4>
     <ul>
       <li>Track project progress</li>
@@ -68,7 +69,7 @@
     </div>
 
 
-<div class="tab-article submissions">
+<div className="tab-article submissions">
     <h4>Submisions</h4>
     <ul>
       <li>Submit project files</li>
@@ -80,7 +81,7 @@
     <p>Under submissions, you will be able to submit proper project files, for review. And further submissions for interns participating in Website Development and Applications, locate in the Submission page. As well, provide feedback for projects.</p>
     </div>
     
-<div class="tab-article hours">
+<div className="tab-article hours">
     <h4>Intern Hours</h4>
     <ul>
       <li>Log Intern hours</li>
@@ -92,7 +93,7 @@
 
 
 
-<div class="tab-article requests">
+<div className="tab-article requests">
     <h4>Software Requests</h4>
     <ul>
       <li>Request software/plugins</li>
@@ -115,8 +116,7 @@
 </div>
 
 
-  
+  );
+}
 
-    
-  </body>
-</html>
+export default Dashboard;
