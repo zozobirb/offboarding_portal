@@ -1,55 +1,51 @@
- body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-        }
-.form-container{
-    height: 100%;
-    width: 85%;
-    flex: 1 1 0%;
-}
-.form-display{
-    width: 100%;
-    font-size: 1.5rem;
-    
-}
-
-        .form-container {
-        
+.form-container-req {
+               height: 100%;
+            width: 85%;
+            flex: 1 1 0%;
             margin: 0 auto;
             background: #ffffff;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: -100px;
         }
-        h2 {
+
+.form-display-req{
+    width: 100%;
+    font-size: 1.5rem;
+    
+}
+
+        
+        .h2-req {
             margin-bottom: 20px;
             color: #333333;
         }
-        .form-group {
+        .form-group-req {
             margin-bottom: 85px;
         }
-        label {
+        .label-req {
             display: block;
             margin-bottom: 5px;
             color: #555555;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 1.4rem;
         }
-        input, select, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 2rem;
+    
+        .input-req{
+            height: 55px;
+            width:100%;
+            font-size: 1.2rem;
         }
-        textarea {
+
+
+       .form-group-req textarea {
             resize: vertical;
-            height: 150px;
+            height: 75px;
+            width:100%;
+           
         }
-        button {
+        .button-req {
             background-color: #007BFF;
             color: white;
             padding: 12px 20px;
@@ -57,7 +53,7 @@
             border-radius: 4px;
             cursor: pointer;
             width: 100%;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         button:hover {
             background-color: #0056b3;
@@ -72,28 +68,21 @@
     
         @media (width > 1250px){
 
-             body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-            height: 100%;
-            height: 100%;
-        }
+      
 
 
-.form-container{
+.form-container-req{
     height: 100%;
     width: 85%;
     flex: 1 1 0%;
 }
-.form-display{
+.form-display-req{
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     
 }
 
-        .form-container {
+        .form-container-req {
         
             margin: 0 auto;
             background: #ffffff;
@@ -101,33 +90,26 @@
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
+        .h2-req {
             margin-bottom: 15px;
             color: #333333;
         }
-        .form-group {
+        .form-group-req {
             margin-bottom: 55px;
         }
-        label {
+        .label-req {
             display: block;
             margin-bottom: 5px;
             color: #555555;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
-        input, select, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 1.4rem;
-        }
+      
         textarea {
             resize: vertical;
             height: 100px;
         }
-        button {
+        .button-req {
             background-color: #007BFF;
             color: white;
             padding: 12px 20px;
@@ -145,6 +127,13 @@
         }
 
 
+
+            @media(width > 1250px){
+.form-container-rep{
+    margin-top: 600px;
+}
+
+            }
        
 
         }

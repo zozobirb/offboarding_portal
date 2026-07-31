@@ -13,22 +13,22 @@ function Project(){
 
 
         <aside className="project-track">
-                <form className="form-container"/>
+                <form className="form-container-proj"/>
                     <h2 className="project-h2">Project Track</h2>
 
 
                       <div className="project-check">
             <h3>Project One</h3>
                 <div className="check-container" id="check-one">
-                   <div className="check+label">
+                   <div className="check_label">
                     <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
+                    <div className="check_label">
                     <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -39,16 +39,16 @@ function Project(){
                     <div className="project-check">
             <h3>Project Two</h3>
                 <div className="check-container" id="check-two">
-                     <div className="check+label">
+                     <div className="check_label">
                     <input type="checkbox" class="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    
@@ -58,15 +58,15 @@ function Project(){
                     <div className="project-check">
             <h3>Project Three</h3>
                 <div className="check-container" id="check-three">
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-IP"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
+                    <div className="check_label">
                     <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -76,15 +76,15 @@ function Project(){
                     <div className="project-check">
             <h3>Project Four</h3>
                 <div className="check-container" id="check-four">
-                     <div className="check+label">
+                     <div className="check_label">
                     <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
+                    <div className="check_label">
                     <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
+                    <div className="check_label">
                     <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
@@ -95,16 +95,16 @@ function Project(){
                     <div className="project-check">
             <h3>Project Five</h3>
                 <div className="check-container" id="check-five">
-                     <div className="check+label">
+                     <div className="check_label">
                     <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    
@@ -114,16 +114,16 @@ function Project(){
                    <div className="project-check">
             <h3>Project Six</h3>
                 <div className="check-container" id="check-six">
-                     <div className="check+label">
+                     <div className="check_label">
                     <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
+                    <div className="check_label">
                     <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    
@@ -133,16 +133,16 @@ function Project(){
                     <div className="project-check">
             <h3>Project Seven</h3>
                 <div className="check-container" id="check-seven">
-                     <div className="check+label">
-                    <input type="checkbox" class="check ck-IP"></input>
+                     <div className="check_label">
+                    <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
+                    <div className="check_label">
                     <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    
@@ -152,16 +152,16 @@ function Project(){
                     <div class="project-check">
             <h3>Project Eight</h3>
                 <div class="check-container" id="check-eight">
-                     <div className="check+label">
+                     <div className="check_label">
                     <input type="checkbox" className="check ck-IP"></input>
                     <label for="ip-label">IP</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Complete"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Complete"></input>
                     <label for="comp-label">Complete</label>
                     </div>
-                    <div className="check+label">
-                    <input type="checkbox" class="check ck-Over"></input>
+                    <div className="check_label">
+                    <input type="checkbox" className="check ck-Over"></input>
                     <label for="over-label">Overdue</label>
                     </div>
                 </div>    

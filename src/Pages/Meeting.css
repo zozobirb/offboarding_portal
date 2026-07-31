@@ -91,12 +91,10 @@ gap: 75px;
     margin-right: 25px;
     font-size: 1.2rem;
     width: 50px;
-    height: 50px;
 }
 
 .btn-request{
 background-color: gold;
-    margin-right: 25px;
     font-size: 1.2rem;
     width: 225px;
     height: 100px;
@@ -118,7 +116,6 @@ background-color: gold;
     cx:50px; 
     cy:50px;
     r:40px;
-    fill:none;
     stroke:black;
 
 }
@@ -128,8 +125,8 @@ background-color: gold;
     cx:50px; 
     cy:50px;
     r:40px;
-    fill:none;
     stroke:black;
+    
 
 }
 
@@ -147,7 +144,6 @@ background-color: gold;
 }
 
         .form-container-meeting {
-           display: none;
             margin: 0 auto;
             background: #ffffff;
             padding: 30px;
@@ -168,19 +164,21 @@ background-color: gold;
             font-weight: bold;
             font-size: 1.5rem;
         }
-        input, select, textarea {
+         textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            font-size: 2rem;
+            font-size: 1rem;
         }
+
         textarea {
             resize: vertical;
             height: 250px;
         }
         button {
+         
             background-color: #007BFF;
             color: white;
             padding: 12px 20px;
@@ -202,6 +200,12 @@ background-color: gold;
         .cancel-btn:hover{
             background-color:red;
             
+        }
+
+        .form-group-meeting{
+            display:flex;
+            flex-direction:column;
+
         }
 
 
@@ -286,7 +290,7 @@ background-color: gold;
             font-weight: bold;
             font-size: 1rem;
         }
-        input, select, textarea {
+      textarea {
             width: 100%;
             padding: 5px;
             border: 1px solid #ccc;
@@ -294,6 +298,15 @@ background-color: gold;
             box-sizing: border-box;
             font-size: 1rem;
             margin-bottom: 0;
+        }
+
+         .form-group-meeting select input{
+                 width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 2rem;
         }
         textarea {
             resize: vertical;

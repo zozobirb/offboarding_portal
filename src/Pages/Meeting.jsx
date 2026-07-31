@@ -1,25 +1,34 @@
 import './Meeting.css'
-import './meeting-page.js'
+import { useState } from 'react'
+
   
   
 
+
   function Meeting(){
-  
-  
+ 
+        const [countMan, setCountMan] = useState(0); 
+    const [countOne, setCountOne] = useState(0);
+    const [form_display, setDisplay] = useState('none');
+
+    //use states MUST be used INSIDE COMPONENTS
+
   return( 
     <>
+
+
 <div className="main-body-meeting">
 <div className="title-body-meeting">
   <h1>Meeting Hub</h1>
 
-  <button className="btn-request">Meeting Feedback</button>
+  <button className="btn-request" onClick={() => (setDisplay('revert'))}>Meeting Feedback</button>
 </div>
     
 
-<div className="form-container-meeting">
+<div className="form-container-meeting" style={{ display: form_display }}>
 
-<div className="form-display-meeting">
-    <button className="cancel-btn">Cancel</button>
+<div className="form-display-meeting" >
+    <button className="cancel-btn" onClick={() => (setDisplay('none'))}>Cancel</button>
     <h2 className="h2-meeting">1:1 Meeting Feedback</h2>
     <form action="#" method="POST">
         
@@ -64,7 +73,7 @@ import './meeting-page.js'
             <textarea id="eval" name="notes" placeholder="Feedback here...."></textarea>
         </div>
 
-        <button type="submit" id="sub-btn">Submit Feedback</button>
+        <button type="submit" id="sub-btn" onClick={() => (setDisplay('none'))}>Submit Feedback</button>
     </form>
 </div>
 
@@ -81,43 +90,43 @@ import './meeting-page.js'
 
     <div className="meeting-card">
         <div className="title_track">
-            <h2 className="h2-meeting" id="man-title">Mandatory Meeting</h2>
+            <h2 className="h2-meeting" id="man-title">Mandatory Meeting(Complete {countMan}/8)</h2>
             <div className="tracker-body"> 
                 <svg className="svg-man">
-  <circle className="man-cir"/>
+  <circle className="man-cir" fill={countMan >= 1 ? "green" : "none"}/>
 </svg>
 
          <svg className="svg-man">
-  <circle className="man-cir"/>
+  <circle fill={countMan >= 2 ? "green" : "none"} className="man-cir"/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="man-cir"/>
+  <circle className="man-cir" fill={countMan >= 3 ? "green" : "none"}/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="man-cir"/>
+  <circle className="man-cir" fill={countMan >= 4 ? "green" : "none"}/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="man-cir"/>
+  <circle className="man-cir" fill={countMan >= 5 ? "green" : "none"}/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="man-cir"/>
+  <circle className="man-cir" fill={countMan >= 6 ? "green" : "none"}/>
 </svg>
 
              <svg className="svg-man">
-  <circle className="man-cir"/>
+  <circle className="man-cir" fill={countMan >= 7 ? "green" : "none"}/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="man-cir" id="last-cir"/>
+  <circle className="man-cir" id="last-cir" fill={countMan >= 8 ? "green" : "none"}/>
 </svg>
 
 
@@ -126,7 +135,7 @@ import './meeting-page.js'
     <aside className="log-body">
          <h3>Log Mandatory Attendance</h3>
         <div className="btn-container">
-            <button className="btn" id="man-log">+</button>
+            <button className="btn" onClick={countMan >= 8 ? countMan : ()=> setCountMan(countMan + 1)} id="man-log">+</button>
             <p className="btn-text">Log a meeting attendance</p>
         </div>
     </aside>
@@ -134,31 +143,31 @@ import './meeting-page.js'
 
 <div className="meeting-card">
         <div className="title_track-meeting">
-            <h2 className="h2-meeting" id="one-title">1:1 Meeting</h2>
+            <h2 className="h2-meeting" id="one-title">1:1 Meeting(Complete {countOne}/5)</h2>
             <div className="tracker-body">
                 
                 
                 <svg className="svg-man">
-  <circle className="one-cir"/>
+  <circle className="one-cir" fill={countOne >= 1 ? "green" : "none"}/>
 </svg>
 
          <svg className="svg-man">
-  <circle className="one-cir"/>
+  <circle className="one-cir" fill={countOne >= 2 ? "green" : "none"}/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="one-cir"/>
+  <circle className="one-cir" fill={countOne >= 3 ? "green" : "none"}/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="one-cir" id="min-cir"/>
+  <circle className="one-cir" id="min-cir" fill={countOne >= 4 ? "green" : "none"}/>
 </svg>
 
 
              <svg className="svg-man">
-  <circle className="one-cir" id="last-one-cir"/>
+  <circle className="one-cir" id="last-one-cir" fill={countOne >= 5 ? "green" : "none"}/>
 </svg>
 
 
@@ -169,7 +178,7 @@ import './meeting-page.js'
     <aside className="log-body">
         <h3>Modify 1:1 Meetings</h3>
         <div className="btn-container">
-            <button className="btn" id="one-log">+</button>
+            <button className="btn" id="one-log" onClick={countOne >= 5 ? countOne : ()=> setCountOne(countOne + 1)} >+</button>
             <p className="btn-text">Log a meeting</p>
         </div>
         <div className="btn-container">
@@ -200,7 +209,6 @@ import './meeting-page.js'
 </div>
 
 
- <script src="./meeting-page.js" defer></script>
 </>
     );
 
