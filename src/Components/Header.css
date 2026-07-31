@@ -2,7 +2,7 @@
 .header-body{
 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-
+        
     }
 
 .title-body{
@@ -37,7 +37,8 @@
   flex-direction:column;
   justify-content: center;
   align-items: center;
-    height:15%;
+    height:65px;
+
 }
 
 .dash-children:hover{
@@ -45,16 +46,12 @@
     cursor:pointer;
 }
 
-Link{
-  align-items: center;
-  display:flex;
-  justify-content:center;
-  
 
- 
-}
 
 .link-name{
+    align-items: center;
+  display:flex;
+  justify-content:center;
 text-decoration: none;
 color:black;
 height:100%;
@@ -80,18 +77,22 @@ height:100%;
     right: 0;
 position: fixed;
 justify-content:center;
-height:150px;
+height:125px;
 top:0;
 align-items: center;
 background: purple;
     display:flex;
     justify-content:center;
-    align-items: center;
+    padding:1%;
+    box-sizing: border-box;
+
 }
 
+
 .title-body{
+    align-self:center;
   flex: 2 1 auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 100px;
   margin-right: 10%;
   width:60%;
@@ -99,18 +100,25 @@ background: purple;
 }
 
 .dashboard{
+    
     width:100%;
     flex:1 1 auto;
-  align-self:center;
   font-size: 1.5rem;
   display:flex;
   flex-direction: row;
   gap: 50px;
-  margin-right: 2%;
-  height:100%;
+  height:auto;
   font-size:1.1rem;
+    }
 
-  
+
+.dash-children{
+
+ margin-bottom:0;
+
 }
+
+
+
 
 }

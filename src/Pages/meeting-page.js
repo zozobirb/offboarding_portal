@@ -9,17 +9,17 @@ const subBtn = document.querySelector("#sub-btn");
 
 
 cancelBtn.addEventListener('click', (e) => {
-    const formC = document.querySelector(".form-container");
+    const formC = document.querySelector(".form-container-meeting");
     formC.style.display = "none";
 });
 
 btnReq.addEventListener('click', (e) => {
-    const formC = document.querySelector(".form-container");
+    const formC = document.querySelector(".form-container-meeting");
     formC.style.display = "revert";
 });
 
 subBtn.addEventListener('click', (e) => {
-    const formC = document.querySelector(".form-container");
+    const formC = document.querySelector(".form-container-meeting");
     formC.style.display = "none";
 });
 

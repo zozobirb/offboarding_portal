@@ -5,3 +5,10 @@ body {
     padding: 20px;
     height:100%;
     }
+    /* Ensuring stays under header*/
+    @media(width < 1250){
+    .main-article{
+      margin-top: -150px;
+    }
+
+}
