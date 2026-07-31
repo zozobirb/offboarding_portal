@@ -22,7 +22,7 @@ function Dashboard(){
 </div>
 
   <div className="dash-children">
-<Link className="projHub" to="/projectHub">Project Hub</Link  >
+<Link className="projHub" to="/projectHub">Project Hub</Link>
 </div>
 
   <div className="dash-children">
