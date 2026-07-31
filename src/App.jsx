@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Dashboard from './Dashboard.jsx'
+import Dashboard from './Pages/Dashboard.jsx'
 import Project from './Project.jsx'
 import {Routes, Route} from 'react-router-dom'
 import { Link, useNavigate } from 'react-router-dom'

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Dashboard.css'
+import "./Dashboard.css";
 import { Link, useNavigate } from 'react-router-dom'
 
 
@@ -9,7 +9,7 @@ import { Link, useNavigate } from 'react-router-dom'
 function Dashboard(){
   return(
     
-<div className="main-body">
+<div className="main-body-dash">
 <div className="title-body">
   <h1>Welcome to the Offbording Portal</h1>
 </div>
@@ -22,7 +22,7 @@ function Dashboard(){
 </div>
 
   <div className="dash-children">
-<Link to="/projectHub">Project Hub</Link  >
+<Link className="projHub" to="/projectHub">Project Hub</Link  >
 </div>
 
   <div className="dash-children">
@@ -45,6 +45,7 @@ function Dashboard(){
 
 <h3>What to find:</h3>
 </div>
+<div className="tabs">
     <div className="tab-article meetings">
     <h4>Meetings</h4>
     <ul>
@@ -103,7 +104,7 @@ function Dashboard(){
     <p>With the Software Request able to effciently request the use of specific software/plugins that can be used towards completion of projects. Additionally access a list of current software provided.</p>
     </div>
     
-    
+    </div>
     
   </div>
   
