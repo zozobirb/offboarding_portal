@@ -13,8 +13,8 @@ function Project(){
 
 
         <aside className="project-track">
-                <form class="form-container"/>
-                    <h2>Project Track</h2>
+                <form className="form-container"/>
+                    <h2 className="project-h2">Project Track</h2>
 
 
                       <div className="project-check">

@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import "./Dashboard.css";
+import "./Dashboard.css"
 import { Link, useNavigate } from 'react-router-dom'
-
 
 
 
@@ -10,38 +9,9 @@ function Dashboard(){
   return(
     
 <div className="main-body-dash">
-<div className="title-body">
-  <h1>Welcome to the Offbording Portal</h1>
-</div>
-    
-<div className="dashboard">
-<div className="dash-children">
-
-<p>Meeting Hub</p>
-  
-</div>
-
-  <div className="dash-children">
-<Link className="projHub" to="/projectHub">Project Hub</Link>
-</div>
-
-  <div className="dash-children">
-<p>Submissions</p>
-</div>
-
-  <div className="dash-children">
-<p>Intern Hours</p>
-</div>
-
-  <div className="dash-children">
-<p>Software Requests</p>
-</div>
-
-</div>
-
 
   <div className="message-body"><div className="intro"><h2>Overview:</h2>
-<p>Welcome to the Offboarding Portal. Here the portal will serve as a way to track your internship experience here at TLT. Ensurring you are on track as a intern</p>
+<p>Welcome to the Offboarding Portal. Here the portal will serve as a way to track your internship experience here at Organization.Inc,. Ensuring you are on track throughout your internship!</p>
 
 <h3>What to find:</h3>
 </div>

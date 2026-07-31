@@ -1,0 +1,116 @@
+
+.header-body{
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+.title-body{
+
+  display:flex;
+  height: 20%;
+  align-self: flex-start;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.title-box{
+    cursor:pointer;
+}
+.dashboard{
+    align-self:center;
+    align-items:center;
+  font-size: 1.5rem;
+  display:flex;
+  flex-direction: column;
+  width: 95%;
+  
+  
+}
+.dash-children{
+  border-radius: 5px;
+  border:12px;
+  width: 100%;
+  background: gold;
+  margin-bottom: 65px;/* margin this size for thumb-size in mobile design*/
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+    height:15%;
+}
+
+.dash-children:hover{
+   
+    cursor:pointer;
+}
+
+Link{
+  align-items: center;
+  display:flex;
+  justify-content:center;
+  
+
+ 
+}
+
+.link-name{
+text-decoration: none;
+color:black;
+height:100%;
+}
+
+.link-name:hover{
+    color:white;
+     
+}
+.dash-children p{
+  align-items: center;
+  display:flex;
+  justify-content:center;
+  height:100%;
+  width:100%;
+
+}
+
+@media(width > 1500px){
+.header-body{
+      z-index: 1000;
+    left: 0;
+    right: 0;
+position: fixed;
+justify-content:center;
+height:150px;
+top:0;
+align-items: center;
+background: purple;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.title-body{
+  flex: 2 1 auto;
+  font-size: 1rem;
+  margin-bottom: 100px;
+  margin-right: 10%;
+  width:60%;
+   
+}
+
+.dashboard{
+    width:100%;
+    flex:1 1 auto;
+  align-self:center;
+  font-size: 1.5rem;
+  display:flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-right: 2%;
+  height:100%;
+  font-size:1.1rem;
+
+  
+}
+
+}

@@ -1,61 +1,14 @@
 
-.main-body-dash{    
-  display: flex;
-  width: 95%;
-  flex-direction: column;
-  align-items: center;
-}
-.title-body{
-  display:flex;
-  height: 20%;
-  align-self: flex-start;
-  font-size: 1.5rem;
-  margin-bottom: 50px;
-}
-
-
-.dashboard{
-  font-size: 1.5rem;
-  height: 100%;
-  display:flex;
-  flex-direction: column;
-  width: 95%;
-  
-  
-}
-.dash-children{
-  border-radius: 5px;
-  border:12px;
-  width: 100%;
-  background: gold;
-  margin-bottom: 65px;/* margin this size for thumb-size in mobile design*/
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-Link{
-  align-items: center;
-  display:flex;
-  justify-content:center;
+.main-body-dash{ 
  
+  margin-top: 205px;
+  
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
-
-
-.dash-children p{
-  align-items: center;
-  display:flex;
-  justify-content:center;
-  height:100%;
-  width:100%;
-
-}
-
-
 .message-body{
-  margin-top: 20%;
+
   display:flex;
   flex-direction: column;
   align-content: center;
@@ -66,19 +19,19 @@ Link{
 .message-body h2{
  align-self: flex-start;
   flex-direction: column;
- font-size: 2rem;
+ font-size: 1.5rem;
 }
 
 .tab-article-dash{
   align-content: self;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   flex-direction: column;
   margin-bottom: 75px;
 }
 
 .tab-article-dash h4{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -87,6 +40,7 @@ Link{
 @media(width > 1500px){
 
 .main-body-dash{
+ 
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -95,23 +49,6 @@ Link{
 
 }
 
-.title-body{
-  width:100%;
-  font-size: 2rem;
-  margin-bottom: 100px;
-   
-}
-
-.dashboard{
-  align-self:center;
-  font-size: 2rem;
-  display:flex;
-  flex-direction: row;
-  gap: 50px;
-  margin: 0;
-
-  
-}
   
 
 .meetings{
@@ -140,29 +77,32 @@ Link{
     display: flex;
     flex-direction: column;
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
       width: 90%;
       justify-self: center;
+      justify-content: center;
       padding: 1.5%;
      margin-bottom:0;
+     width:75%;
 
   }
   .intro h2{
     align-self: center;
     
-    font-size: 3rem;
+    font-size: 1.5rem;
    
   }
 
   .intro h3{
     align-self: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
   }
 
 
 .tabs{
+  
   margin-top: 10%;
   display:grid;
   grid-template-columns: repeat(7, 1fr);
@@ -174,7 +114,7 @@ Link{
 "request-area request-area request-area . sub-area sub-area sub-area";
 row-gap: 5%;
 
-
+font-size: 1.2rem;
  
 }
 
