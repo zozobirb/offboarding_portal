@@ -1,9 +1,14 @@
 import './Submission.css'
+import { useState } from 'react'
 
 
 
 
 function Submission(){
+
+    //useStates may only be used in functional components!!
+    const [currWeek, setWeek] = useState('');
+
 
 return(
     <>
@@ -13,7 +18,7 @@ return(
 
 <div className="drop-down-sub">
      <label for="project">Project Week:</label>
-    <select id="select-ini" name="Weeks">
+    <select id="select-ini" name="Weeks" onChange={(e)=> setWeek(e.target.value)}>
         <option value="One" class="opt">Week One</option>
         <option value="Two" class="opt">Week Two</option>
         <option value="Three" class="opt">Week Three</option>
@@ -29,7 +34,7 @@ return(
 
 
 <div className="title-upload-sub">
-    <h2 id="week-select">Week One Submission:</h2>
+    <h2 id="week-select">Week {currWeek} Submission:</h2>
     <form className="upload-body-sub">
         <label for="file-up">Please upload files</label> 
         <input className="input-file" type="file" id="file-upload" name="file"/>

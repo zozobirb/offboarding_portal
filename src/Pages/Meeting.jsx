@@ -28,7 +28,7 @@ import { useState } from 'react'
 <div className="form-container-meeting" style={{ display: form_display }}>
 
 <div className="form-display-meeting" >
-    <button className="cancel-btn" onClick={() => (setDisplay('none'))}>Cancel</button>
+    <button className="cancel-btn" onClick={() => (setDisplay('none'))} style={{display: form_display}}>Cancel</button>
     <h2 className="h2-meeting">1:1 Meeting Feedback</h2>
     <form action="#" method="POST">
         

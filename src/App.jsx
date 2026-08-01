@@ -7,7 +7,7 @@ import Header from './Components/Header.jsx'
 import Meeting from './Pages/Meeting.jsx'
 import SoftwareRequest from './Pages/SoftwareRequest'
 import Submission from './Pages/Submission.jsx'
-
+import InternHours from './Pages/InternHours.jsx'
 import './App.css'
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
               <Route path="/meetings" element={<Meeting />} /> 
               <Route path="/software-requests" element={<SoftwareRequest />} /> 
               <Route path="/submissions" element={<Submission />} /> 
+              <Route path="/intern-hours"element={<InternHours />} />
              
         </Routes>
 
