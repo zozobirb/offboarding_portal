@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link  rel="stylesheet" href="./stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submission Page</title>
-</head>
-<body>
-    
-<div class="main-body">
+import './Submission.css'
 
-<h1 id="page-title">Project Submissions</h1>
 
-<div class="drop-down">
+
+
+function Submission(){
+
+return(
+    <>
+<div className="main-body-sub">
+
+<h1 id="page-title-sub">Project Submissions</h1>
+
+<div className="drop-down-sub">
      <label for="project">Project Week:</label>
     <select id="select-ini" name="Weeks">
         <option value="One" class="opt">Week One</option>
@@ -29,16 +28,15 @@
 </div>
 
 
-<div class="title-upload">
+<div className="title-upload-sub">
     <h2 id="week-select">Week One Submission:</h2>
-    <form class="upload-body">
+    <form className="upload-body-sub">
         <label for="file-up">Please upload files</label> 
-        <input type="file" id="file-upload" name="file">
+        <input className="input-file" type="file" id="file-upload" name="file"/>
     </form>
 
 
 </div>
-
 
 
 
@@ -50,7 +48,11 @@
 
 
 <script src="script.js"></script>
+</>
+);
 
 
-</body>
-</html>
+
+}
+
+export default Submission;

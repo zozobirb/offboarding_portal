@@ -6,7 +6,7 @@
         height:100%;
     }
 
-    #page-title{
+    #page-title-sub{
         flex: 1 1 0%;
         font-size:2.5rem;
         margin-bottom:15%;
@@ -14,17 +14,17 @@
     }
 
 
-    .drop-down{
+    .drop-down-sub{
         flex: 1 1 0%;
         margin-bottom:15%;
         font-size:1.5rem;
     }
 
-    select{
+    .drop-down-sub select{
         font-size:1.25rem;
     }
     
-    .title-upload{
+    .title-upload-sub{
         flex: 1 1 0%;
         width:100%;
         height:100%;
@@ -37,7 +37,7 @@
         margin-bottom: 15%;
     }
 
-    .upload-body{
+    .upload-body-sub{
         padding:5%;
         display:flex;
         flex-direction:column;
@@ -45,26 +45,26 @@
         font-size: 1.25rem;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
     }
-    input{
+    .upload-body-sub input{
         flex:1 1 0%;
         font-size:1.25rem;
         margin-bottom: 75%;
         
 
     }
-    label{
+    .upload-body-sub label{
         flex: 1 1 0%;
     }
 
     @media(width > 850px){
 
-        #page-title{
+        #page-title-sub{
             margin-bottom:5%;
             font-size:3rem;
         }
 
 
-        select{
+        .upload-body-sub select{
             font-size:1.5rem;
         }
 
@@ -72,11 +72,11 @@
             margin-bottom: 5%;
         }
 
-        .drop-down{
+        .drop-down-sub{
             margin-bottom:5%;
         }
 
-        label{
+        .upload-body-sub label{
             font-size: 1.5rem;
         }
 
@@ -84,7 +84,7 @@
             font-size: 1.75rem;
         }
 
-        .upload-body{
+        .upload-body-sub{
             justify-content: flex-end;
             display:flex;
             align-items: flex-end;
@@ -92,7 +92,7 @@
             
         }
 
-        input{
+        .upload-body-sub input{
             margin-bottom: 2%;
             margin-right: -7%; 
             display: flex;
