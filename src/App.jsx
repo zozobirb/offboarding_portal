@@ -5,6 +5,7 @@ import {Routes, Route} from 'react-router-dom'
 import { Link, useNavigate } from 'react-router-dom'
 import Header from './Components/Header.jsx' 
 import Meeting from './Pages/Meeting.jsx'
+import SoftwareRequest from './Pages/SoftwareRequest'
 
 import './App.css'
 
@@ -19,7 +20,7 @@ function App() {
               <Route path="/" element={<Dashboard />} /> 
               <Route path="/projectHub" element={<Project />} /> 
               <Route path="/meetings" element={<Meeting />} /> 
-              
+              <Route path="/software-requests" element={<SoftwareRequest />} /> 
              
         </Routes>
 
